@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "DM Sans";
+    font-weight: 700;
+}
+
 header {
     padding: 42.43px 0px 32.3px 51px;
     border-radius: 0px 0px 13px 13px;
@@ -26,4 +31,65 @@ main {
     background-position: center;
     background-size: cover;
     margin-top: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #134077;
+    font-size: 32px;
+    margin-bottom: 22px;
+    padding-top: 79px;
+}
+
+.form-container {
+    background: #FFF;
+    border: 1px solid #134077;
+    border-radius: 19px;
+    max-width: 662px;
+    margin: 0 auto;
+    padding: 46px 47px 52px 36px;
+}
+
+.input label {
+    display: block;
+    color: #231f20;
+    font-size: 13px;
+}
+
+.input input {
+    outline: none;
+    margin-bottom: 47px;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #2d224c;
+    width: 100%;
+    font-size: 20px;
+}
+
+.button-container button {
+    background: #0057ff;
+    border-radius: 11px;
+    font-size: 20px;
+    color: #FFF;
+    width: 100%;
+    border-color: #0057ff;
+    padding: 19.5px 0;
+    margin: 16px 0;
+    cursor: pointer;
+}
+
+.link-container {
+    text-align: center;
+    margin-top: 32px;
+    color: #2d224c;
+}
+
+.link-container p {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.link-container p a {
+    color: #2D224C;
+    font-weight: 700;
 }
