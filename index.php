@@ -1,11 +1,13 @@
 <?php
+
+
     include __DIR__ . '/layout/header.php';
 ?>
 <main>
     <section class="login">
         <h1>Hai già un account?</h1>
         <div class="form-container">
-            <form action="" method="POST">
+            <form action="./login.php" method="POST">
                 <div class="input">
                     <label for="email">Inserisci l'email</label>
                     <input type="mail" placeholder="name@example.com" id="email" name="email">
