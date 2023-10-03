@@ -6,11 +6,11 @@ $password = $connection->real_escape_string($_POST['password']);
 
 if($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    $sql_select = "SELECT * FROM utenti WHERE password = '$password'";
+    $sql_select = "SELECT * FROM utenti WHERE email = '$email'";
 
     if($result = $connection->query($sql_select)){
         if($result->num_rows == 1){
-            $row = $result->fetch_array(MYSQLI_ASSOC);//????
+            $row = $result->fetch_array(MYSQLI_ASSOC);
 
             if($password == $row['password']){
             session_start();
@@ -26,7 +26,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
             }
 
         } else{
-        echo "Non ci sono account con questo username";
+        echo "Non ci sono account con questa email";
         }
     }else{
         echo "Errore in fase di login";
